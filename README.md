@@ -8,4 +8,3 @@ To use, remove current .bashrc, .vimrc, etc  and create symlink to these reposit
 
 I will hopefully automate that ability.
 
-TODO: create computer specific settings.
