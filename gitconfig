@@ -1,0 +1,47 @@
+[user]
+  name = nate_h
+  email = nhapeman@gmail.com
+[core]
+  excludesfile = ~/.git-global-ignore
+  editor = vim
+[diff]
+  tool = vimdiff
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[alias]
+  stat = status
+  s = status --ignore-submodules=untracked
+  c = commit
+  a = add
+  sn = status --untracked=no
+  save = stash save -u
+  co = checkout
+  cb = checkout -b
+  cp = cherry-pick
+  wc = whatchanged
+  l = log --graph --pretty=format:'%Cred[%h]%Creset%Cgreen[%ci]%C(bold blue)[%an]%Creset%C(yellow)%d%Creset %s'
+  f = fetch
+  fo = fetch origin
+  fom = fetch origin master:master
+  fod = fetch origin develop:develop
+  b = branch
+  bd = branch -d
+  sub = submodule
+  suba = submodule add
+  subu = submodule update --init
+  pom = push origin master
+  po = push -u origin
+  pob = !sh -c 'git push -u origin `git r`'
+  pdo = push --delete origin
+  r = rev-parse --abbrev-ref HEAD
+  h = rev-parse HEAD
+  pr = pull-request -b master
+  prd = pull-request -b develop
+[branch]
+  autosetuprebase = always
+[gc]
+  auto = 0
+[push]
+  default = tracking
