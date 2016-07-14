@@ -8,6 +8,19 @@ case $- in
       *) return;;
 esac
 
+################################################################################
+##############################   Load Settings   ###############################
+################################################################################
+
+# laoad settings definitions.
+if [ -f ~/dotfiles/settings.sh ]; then
+    . ~/dotfiles/settings.sh
+fi
+
+################################################################################
+###############################   Pimp Console   ###############################
+################################################################################
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -87,23 +100,11 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -121,20 +122,17 @@ fi
 
 
 
-
-
-
-################################################################################
-#################   User specific aliases and functions   ######################
-################################################################################
-
-
 # this should be the default behavior but its not
 set completion-ignore-case on
 
 #set the background color so I could tell the difference between terrra and mini terra
 #export PS1="\e[44m\u@\h \w> \e[m"
 
+setxkbmap -option caps:backspace
+
+################################################################################
+#################   User specific aliases and functions   ######################
+################################################################################
 
 alias less='less -r'                          # raw control characters
 alias whence='type -a'                        # where, of a sort
@@ -142,14 +140,14 @@ alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour
 
-
-alias ls='ls -hF --color=tty'                 # classify files in colour
+alias path='echo -e ${PATH//:/\\n}'
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
-alias ll='ls -l'                              # long list
+
+alias ll="ls -lv --group-directories-first"
+alias ls='ls -hF --color=tty'                 # classify files in colour
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
-
 
 ################################################################################
 ############################   Personal Shortcuts   ############################
@@ -157,16 +155,12 @@ alias l='ls -CF'                              #
 
 # alias subl='/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe'
 # alias desk="cd C:/Users/nhapeman.AI/Desktop"
-alias ..='cd ..'
-alias ...='cd ../..'
-alias path='echo -e ${PATH//:/\\n}'
-alias ls='ls -h --color'
-alias ll="ls -lv --group-directories-first"
+
 
 alias notes='vim ~/notes.txt'
 alias todo='vim ~/todo.txt'
 alias learn='vim ~/learn.txt'
-setxkbmap -option caps:backspace
+alias createDotLinks="source ~/dotfiles/create_dot_links.sh"
 
 ################################################################################
 #######################   Basic Navigation Commands   ##########################
@@ -198,6 +192,10 @@ alias stash="git stash"
 alias status="git status"
 alias gk="gitk --all"
 alias gui="git gui"
+
+################################################################################
+###############################   Exports   ####################################
+################################################################################
 
 # added by Anaconda2 4.0.0 installer
 export PATH="/home/nate/anaconda2/bin:$PATH"
