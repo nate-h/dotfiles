@@ -146,7 +146,7 @@ alias vdir='ls --color=auto --format=long'
 
 alias ll="ls -lv --group-directories-first"
 alias ls='ls -hF --color=tty'                 # classify files in colour
-alias la='ls -A'                              # all but . and ..
+alias la='ls -a | grep "^\."'
 alias l='ls -CF'                              #
 
 ################################################################################
