@@ -175,7 +175,9 @@ alias ......="cd ../../../../.."
 alias desk="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias down="cd ~/Downloads"
-alias fo="cd ~/dev/fo_website && source venv/bin/activate"
+alias fo="cd ~/dev/frackOptima/"
+alias fow="cd ~/dev/frackOptima/fo_website && source venv/bin/activate"
+alias fog="cd ~/dev/frackOptima/frackoptima"
 
 
 ################################################################################
