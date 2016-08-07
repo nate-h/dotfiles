@@ -177,6 +177,8 @@ alias dev="cd ~/dev"
 alias down="cd ~/Downloads"
 alias fo="cd ~/dev/frackOptima/"
 alias fow="cd ~/dev/frackOptima/fo_website && source venv/bin/activate"
+alias fod="cd ~/dev/frackOptima/fo-docs" 
+alias foa="cd ~/dev/frackOptima/fo-ansible"
 alias fog="cd ~/dev/frackOptima/frackoptima"
 
 
