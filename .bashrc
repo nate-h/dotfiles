@@ -148,6 +148,7 @@ alias ll="ls -lv --group-directories-first"
 alias ls='ls -hF --color=tty'                 # classify files in colour
 alias la='ls -a | grep "^\."'
 alias l='ls -CF'                              #
+alias open='gnome-open'
 
 ################################################################################
 ############################   Personal Shortcuts   ############################
@@ -176,8 +177,8 @@ alias desk="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias down="cd ~/Downloads"
 alias fo="cd ~/dev/frackOptima/"
-alias fow="cd ~/dev/frackOptima/fo_website && source venv/bin/activate"
-alias fod="cd ~/dev/frackOptima/fo-docs" 
+alias fow="cd ~/dev/frackOptima/fo_website && source venv/bin/activate && source /home/nate/anaconda3/bin/activate py34"
+alias fod="cd ~/dev/frackOptima/fo-docs"
 alias foa="cd ~/dev/frackOptima/fo-ansible"
 alias fog="cd ~/dev/frackOptima/frackoptima"
 
