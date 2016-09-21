@@ -162,6 +162,7 @@ alias notes='vim ~/notes.txt'
 alias todo='vim ~/todo.txt'
 alias learn='vim ~/learn.txt'
 alias createDotLinks="source ~/dotfiles/create_dot_links.sh"
+alias g="/opt/google/chrome/google-chrome --enable-plugins"
 
 ################################################################################
 #######################   Basic Navigation Commands   ##########################
@@ -177,10 +178,10 @@ alias desk="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias down="cd ~/Downloads"
 alias fo="cd ~/dev/frackOptima/"
-alias fow="cd ~/dev/frackOptima/fo_website && source /home/nate/anaconda3/bin/activate py33"
+alias fow="cd ~/dev/frackOptima/fo_website && source activate fow"
 alias fod="cd ~/dev/frackOptima/fo-docs"
 alias foa="cd ~/dev/frackOptima/fo-ansible"
-alias fog="cd ~/dev/frackOptima/frackoptima"
+alias fog="cd ~/dev/frackOptima/frackoptima && source activate fog"
 
 
 ################################################################################
