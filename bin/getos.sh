@@ -4,7 +4,7 @@ job="job2" # possible optioins: job1, job2, personal
 
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-	echo "Detected linux as OS"
+	echo "linux"
 		os="linux"
 elif [[ "$OSTYPE" == "msys" ]]; then
   echo "Detected windows as OS"
