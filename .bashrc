@@ -181,7 +181,7 @@ alias fo="cd ~/dev/frackOptima/"
 alias fow="cd ~/dev/frackOptima/fo_website && source activate fow"
 alias fod="cd ~/dev/frackOptima/fo-docs"
 alias foa="cd ~/dev/frackOptima/fo-ansible"
-alias fog="cd ~/dev/frackOptima/frackoptima && source activate fog"
+alias fog="cd ~/dev/frackOptima/frackoptima && source activate fogui"
 
 
 ################################################################################
