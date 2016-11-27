@@ -4,19 +4,14 @@
     disabledPackages: [
       "react"
     ]
-    themes: [
-      "one-dark-ui"
-      "cobalt2-syntax"
-    ]
   editor:
-    fontFamily: "Menlo"
+    fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
     fontSize: 15
     invisibles:
       cr: " "
       eol: " "
       tab: "⇨"
-    preferredLineLength: 120
-    showInvisibles: true
+    showInvisibles: false
     softWrap: true
     softWrapAtPreferredLineLength: true
     tabType: "soft"
@@ -50,40 +45,40 @@
     showOnStartup: false
 ".angular.html.text":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".cake.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".cs.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".csx.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".git-commit.text":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".git-config.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".git-rebase.text":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".js.jsx.react.source":
   editor:
     showInvisibles: true
 ".js.regexp.replacement.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".js.regexp.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".js.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".json.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
 ".nant-build.source":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 80
