@@ -118,17 +118,13 @@ if ! shopt -oq posix; then
 fi
 
 
-
-
-
-
 # this should be the default behavior but its not
 set completion-ignore-case on
 
-#set the background color so I could tell the difference between terrra and mini terra
-#export PS1="\e[44m\u@\h \w> \e[m"
 
-setxkbmap -option caps:backspace
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	setxkbmap -option caps:backspace
+fi
 
 ################################################################################
 #################   User specific aliases and functions   ######################
@@ -199,12 +195,19 @@ alias status="git status"
 alias gk="gitk --all"
 alias gui="git gui"
 
+
 ################################################################################
 ###############################   Exports   ####################################
 ################################################################################
-
 # added by Anaconda2 4.0.0 installer
 export PATH="/home/nate/anaconda2/bin:$PATH"
 
 # added by Anaconda3 4.1.1 installer
 export PATH="/home/nate/anaconda3/bin:$PATH"
+
+################################################################################
+###############################   Load Jobs   ##################################
+################################################################################
+
+source ~/dotfiles/bin/loadJobs.sh
+
