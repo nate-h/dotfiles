@@ -13,7 +13,6 @@
       tab: "⇨"
     showInvisibles: false
     softWrap: true
-    softWrapAtPreferredLineLength: true
     tabType: "soft"
   emmet: {}
   "exception-reporting":
