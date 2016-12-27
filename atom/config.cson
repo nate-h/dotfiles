@@ -3,6 +3,17 @@
   core:
     disabledPackages: [
       "react"
+      "linter-spell-html"
+      "minimap"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "docs/*"
     ]
   editor:
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
