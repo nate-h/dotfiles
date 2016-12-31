@@ -194,6 +194,8 @@ alias stash="git stash"
 alias status="git status"
 alias gk="gitk --all"
 alias gui="git gui"
+alias gs="git status"
+alias gco="git checkout"
 
 
 ################################################################################

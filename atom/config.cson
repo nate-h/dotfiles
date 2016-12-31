@@ -3,8 +3,8 @@
   core:
     disabledPackages: [
       "react"
-      "linter-spell-html"
       "minimap"
+      "spell-check"
     ]
     ignoredNames: [
       ".git"
@@ -15,6 +15,7 @@
       "Thumbs.db"
       "docs/*"
     ]
+    packagesWithKeymapsDisabled: []
   editor:
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
     fontSize: 15
@@ -50,6 +51,16 @@
   "one-light-ui": {}
   pigments: {}
   react: {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.css"
+      "text.html.basic"
+    ]
   "tree-view": {}
   welcome:
     showOnStartup: false
