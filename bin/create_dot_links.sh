@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ################################################################################
 ########################   Create Dot Symbolic Links   #########################
 ################################################################################
@@ -8,19 +10,9 @@
 ################################################################################
 
 
+
 # see if the parent directory is located in home directory
 echo -e "Attempting to create symbolic links for dot files\n"
-
-
-# verify dotfiles placed in correct directory
-echo -e "Verifying that \"dotfiles\" is located in the correct directory"
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-correctDIR=~/dotfiles
-if [ "$DIR" != "$correctDIR" ]; then
-  echo -e "Error: \"dotfiles\" is not in correct directory. Please place \"dotfiles\" in $HOME"
-  exit
-fi
-echo -e "\"dotfiles\" successfully placed in $HOME.\n"
 
 
 # Create symbolic links
