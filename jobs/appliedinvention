@@ -5,6 +5,7 @@
 ###############   Amitek Navigation Commands   #############
 ############################################################
 
+alias fish="cd ~/dev/fish"
 
 alias under="cd ~/dev/undersea"
 alias ami="cd ~/dev/undersea/amitek"
