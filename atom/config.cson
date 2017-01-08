@@ -5,6 +5,8 @@
       "react"
       "minimap"
       "spell-check"
+      "linter-spell"
+      "linter-spell-html"
     ]
     ignoredNames: [
       ".git"

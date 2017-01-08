@@ -6,6 +6,7 @@
 ############################################################
 
 alias fish="cd ~/dev/fish"
+alias fisha="cd ~/dev/fish/VideoAnnotator"
 
 alias under="cd ~/dev/undersea"
 alias ami="cd ~/dev/undersea/amitek"
@@ -13,3 +14,5 @@ alias ami="cd ~/dev/undersea/amitek"
 alias mongr="source ~/dev/undersea/amitek/data/db.sh run"
 alias mongi="source ~/dev/undersea/amitek/data/db.sh import"
 alias monge="source ~/dev/undersea/amitek/data/db.sh export"
+
+
