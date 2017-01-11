@@ -144,7 +144,12 @@ alias ll="ls -lv --group-directories-first"
 alias ls='ls -hF --color=tty'                 # classify files in colour
 alias la='ls -a | grep "^\."'
 alias l='ls -CF'                              #
-alias open='gnome-open'
+
+# open with no output
+function open(){
+	gnome-open "$@" >/dev/null 2>&1
+
+}
 
 ################################################################################
 ############################   Personal Shortcuts   ############################
