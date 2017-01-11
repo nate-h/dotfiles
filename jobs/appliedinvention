@@ -5,9 +5,8 @@
 ###############   Amitek Navigation Commands   #############
 ############################################################
 
-alias fish="cd ~/dev/fish"
-alias fisha="cd ~/dev/fish/Annotator"
-alias fishw="cd ~/dev/fish/Annotator/webapps"
+alias fish="cd ~/dev/Annotator"
+alias fishw="cd ~/dev/Annotator/webapps"
 
 alias under="cd ~/dev/undersea"
 alias ami="cd ~/dev/undersea/amitek"
