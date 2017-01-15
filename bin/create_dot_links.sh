@@ -38,14 +38,8 @@ link() {
         else
             ln -s "$2" "$1"
         fi
-        echo "Created symbolic"
     fi
 }
-
-
-# see if the parent directory is located in home directory
-echo -e "Attempting to create symbolic links for dot files\n"
-
 
 # Create symbolic links
 dotfiles=(.bashrc .vimrc)
@@ -54,7 +48,11 @@ for i in "${dotfiles[@]}"; do
   if [ -f ~/$i ]; then
       echo "Error: Unable to create symbolic link for $i. File already exist."
     else
-      # ln -s ~/dotfiles/$i ~/$i
-      link %HOMEPATH%/$i %HOMEPATH%/dotfiles/$i
+      if windows; then
+          link %HOMEPATH%/$i %HOMEPATH%/dotfiles/$i
+      else
+          link ~/$i ~/dotfiles/$i
+      fi
+      echo "Created symbolic for $i"
   fi
 done
