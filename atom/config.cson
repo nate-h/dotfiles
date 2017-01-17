@@ -25,7 +25,6 @@
       cr: " "
       eol: " "
       tab: "⇨"
-    showInvisibles: true
     softWrap: true
     tabLength: 4
     tabType: "soft"
