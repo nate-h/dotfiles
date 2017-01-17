@@ -25,8 +25,9 @@
       cr: " "
       eol: " "
       tab: "⇨"
-    showInvisibles: false
+    showInvisibles: true
     softWrap: true
+    tabLength: 4
     tabType: "soft"
   emmet: {}
   "exception-reporting":
