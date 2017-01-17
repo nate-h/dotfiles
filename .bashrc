@@ -71,8 +71,6 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -96,10 +94,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -178,11 +172,6 @@ alias ......="cd ../../../../.."
 alias desk="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias down="cd ~/Downloads"
-alias fo="cd ~/dev/frackOptima/"
-alias fow="cd ~/dev/frackOptima/fo_website && source activate fow"
-alias fod="cd ~/dev/frackOptima/fo-docs"
-alias foa="cd ~/dev/frackOptima/fo-ansible"
-alias fog="cd ~/dev/frackOptima/frackoptima && source activate fogui"
 
 
 ################################################################################
@@ -218,3 +207,5 @@ export PATH="/home/nate/miniconda2/bin:$PATH"
 
 source ~/dotfiles/bin/loadJobs.sh
 
+# Force console to start in home dir. Windows msys terminal doesn't
+cd ~
