@@ -17,10 +17,9 @@
       "Thumbs.db"
       "docs/*"
     ]
-    packagesWithKeymapsDisabled: []
   editor:
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
-    fontSize: 15
+    fontSize: 16
     invisibles:
       cr: " "
       eol: " "

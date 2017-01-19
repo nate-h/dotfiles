@@ -195,11 +195,12 @@ alias gb="git branch"
 ################################################################################
 ###############################   Exports   ####################################
 ################################################################################
+
 # added by Anaconda2 4.0.0 installer
-export PATH="/home/nate/anaconda2/bin:$PATH"
+export PATH="/home/nate/anaconda3/bin:$PATH"
 
 # added by Anaconda3 4.1.1 installer
-export PATH="/home/nate/miniconda2/bin:$PATH"
+#export PATH="/home/nate/miniconda2/bin:$PATH"
 
 ################################################################################
 ###############################   Load Jobs   ##################################
