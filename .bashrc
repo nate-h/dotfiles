@@ -153,9 +153,6 @@ function open(){
 # alias desk="cd C:/Users/nhapeman.AI/Desktop"
 
 
-alias notes='vim ~/notes.txt'
-alias todo='vim ~/todo.txt'
-alias learn='vim ~/learn.txt'
 alias createDotLinks="source ~/dotfiles/create_dot_links.sh"
 alias g="/opt/google/chrome/google-chrome --enable-plugins"
 
@@ -203,10 +200,11 @@ export PATH="/home/nate/anaconda3/bin:$PATH"
 #export PATH="/home/nate/miniconda2/bin:$PATH"
 
 ################################################################################
-###############################   Load Jobs   ##################################
+#########################   Load External Sources   ############################
 ################################################################################
 
 source ~/dotfiles/bin/loadJobs.sh
+source ~/mypad/aliases
 
 # Force console to start in home dir. Windows msys terminal doesn't
 cd ~

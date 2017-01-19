@@ -7,6 +7,12 @@
       "spell-check"
       "linter-spell"
       "linter-spell-html"
+      "uglify"
+      "redux-snippets"
+      "react-snippets"
+      "mighty-react-snippets"
+      "intentions"
+      "git-blame"
     ]
     ignoredNames: [
       ".git"
@@ -16,6 +22,9 @@
       "._*"
       "Thumbs.db"
       "docs/*"
+    ]
+    packagesWithKeymapsDisabled: [
+      "highlight-selected"
     ]
   editor:
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
@@ -32,6 +41,10 @@
     userId: "0f4e16a3-5040-01ba-b000-a0793a69fb44"
   "highlight-line":
     enableBackgroundColor: false
+  "highlight-selected":
+    highlightBackground: true
+    highlightInPanes: false
+    ignoreCase: true
   jshint:
     supportLintingJsx: true
   linter:
