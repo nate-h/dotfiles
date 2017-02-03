@@ -13,6 +13,8 @@
       "mighty-react-snippets"
       "intentions"
       "git-blame"
+      "atom-jshint"
+      "jshint"
     ]
     ignoredNames: [
       ".git"
@@ -26,9 +28,10 @@
     packagesWithKeymapsDisabled: [
       "highlight-selected"
     ]
+    telemetryConsent: "no"
   editor:
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
-    fontSize: 16
+    fontSize: 15
     invisibles:
       cr: " "
       eol: " "
