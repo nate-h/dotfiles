@@ -32,7 +32,6 @@ link() {
             if [[ -d "$2" ]]; then
                 cmd <<< "mklink /D \"$1\" \"${2//\//\\}\"" > /dev/null
             else
-                # cmd <<< "echo \"${1//\//\\}\" \"${2//\//\\}\""
                 cmd <<< "mklink ${1//\//\\} ${2//\//\\}"  > /dev/null
             fi
         else
@@ -42,8 +41,7 @@ link() {
 }
 
 # Create symbolic links
-dotfiles=(.bashrc .vimrc .zshrc) 
-echo "Attempting to create symbolic links for ${dotfiles[*]}"
+dotfiles=(`find ~/dotfiles/dots -name '.*'`)
 for i in "${dotfiles[@]}"; do
   if [ -f ~/$i ]; then
       echo "Error: Unable to create symbolic link for $i. File already exist."
@@ -51,7 +49,7 @@ for i in "${dotfiles[@]}"; do
       if windows; then
           link %HOMEPATH%/$i %HOMEPATH%/dotfiles/$i
       else
-          link ~/$i ~/dotfiles/$i
+          link ~/$(basename $i) $i
       fi
       echo "Created symbolic for $i"
   fi
