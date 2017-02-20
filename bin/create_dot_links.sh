@@ -42,7 +42,7 @@ link() {
 }
 
 # Create symbolic links
-dotfiles=(.bashrc .vimrc)
+dotfiles=(.bashrc .vimrc .zshrc) 
 echo "Attempting to create symbolic links for ${dotfiles[*]}"
 for i in "${dotfiles[@]}"; do
   if [ -f ~/$i ]; then
