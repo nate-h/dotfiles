@@ -1,6 +1,10 @@
 for f in ~/dotfiles/jobs/*
 do
-  echo -n "Loading commands for job $f..."
-  source $f
-  echo "Done!"
+  if [ -r "$f" ] && [ -f "$f" ]; then
+      echo -n "Loading commands for job $(basename $f)..."
+      source $f
+      echo "Done!"
+  else
+    echo "Unable to load commands for job: $(basename $f)"
+  fi
 done
