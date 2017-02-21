@@ -37,11 +37,10 @@ fi
 ################################################################################
 
 # added by Anaconda2 4.0.0 installer
-export PATH="/home/nate/anaconda3/bin:$PATH"
+#export PATH="/home/nate/anaconda3/bin:$PATH"
 
-# added by Anaconda3 4.1.1 installer
-#export PATH="/home/nate/miniconda2/bin:$PATH"
-
+# added by Miniconda3 4.3.11 installer
+export PATH="/home/nate/miniconda3/bin:$PATH"
 ################################################################################
 #########################   Load External Sources   ############################
 ################################################################################
@@ -60,3 +59,4 @@ source ~/mypad/aliases
 
 # Force console to start in home dir. Windows msys terminal doesn't
 cd ~
+
