@@ -20,6 +20,6 @@ source ~/.bashrc
 
 # Configure zsh
 ZSH_THEME="agnoster"
-plugins=(git virtualenv virtualenvwrapper zsh-syntax-highlighting)
+plugins=(virtualenv virtualenvwrapper zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 source /home/nate/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
