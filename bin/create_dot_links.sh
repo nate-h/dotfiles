@@ -50,6 +50,8 @@ for i in "${dotfiles[@]}"; do
           link %HOMEPATH%/$i %HOMEPATH%/dotfiles/$i
       else
           link ~/$(basename $i) $i
+          #echo ~/$(basename $i)
+          #echo $i
       fi
       echo "Created symbolic for $i"
   fi

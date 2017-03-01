@@ -24,6 +24,7 @@
       "._*"
       "Thumbs.db"
       "docs/*"
+      "node_modules/*"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"
