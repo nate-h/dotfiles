@@ -1,6 +1,6 @@
 [user]
-  name = nate_h
-  email = nhapeman@gmail.com
+	name = nates linux desktop
+	email = nhapeman@ai.co
 [core]
   excludesfile = ~/.git-global-ignore
   editor = vim
