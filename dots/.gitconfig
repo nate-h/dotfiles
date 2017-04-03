@@ -39,8 +39,6 @@
   h = rev-parse HEAD
   pr = pull-request -b master
   prd = pull-request -b develop
-[branch]
-  autosetuprebase = always
 [gc]
   auto = 0
 [push]
