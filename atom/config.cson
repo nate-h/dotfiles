@@ -24,6 +24,10 @@
       "._*"
       "Thumbs.db"
       "docs/*"
+      "node_modules/*"
+      "gui/*"
+      "minifrac/*"
+      "core/*"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"
