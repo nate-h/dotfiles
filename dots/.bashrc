@@ -40,7 +40,8 @@ fi
 #export PATH="/home/nate/anaconda3/bin:$PATH"
 
 # added by Miniconda3 4.3.11 installer
-export PATH="/home/nate/miniconda3/bin:$PATH"
+export PATH="/home/nate/miniconda2/bin:$PATH"
+export PATH=~/.local/bin:$PATH
 ################################################################################
 #########################   Load External Sources   ############################
 ################################################################################

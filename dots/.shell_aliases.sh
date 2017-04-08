@@ -79,7 +79,7 @@ alias fs="stat -f \"%z bytes\""
 
 
 # zshrc config
-alias zshrc="${EDITOR} ${$(cd -P $(dirname $0) && cd ..; pwd -P)}"
+#alias zshrc="${EDITOR} ${$(cd -P $(dirname $0) && cd ..; pwd -P)}"
 alias reload="source ~/.zshrc && echo 'Shell config reloaded from ~/.zshrc'"
 
 # zsh.local config
@@ -156,7 +156,9 @@ alias gco="git checkout"
 alias gb="git branch"
 
 
-alias gss="git status -s"
+
+alias gsss="git status -s"
+alias gss="git show --stat"
 alias gp="git push origin HEAD"
 alias gpt="git push origin HEAD && git push --tags"
 alias wip="git commit -m'WIP' . && git push origin HEAD"
@@ -168,7 +170,6 @@ alias gs='git status'
 alias gd='git diff'
 alias gm='git commit -m'
 alias gam='git commit -am'
-alias gb='git branch'
 alias gc='git checkout'
 alias gra='git remote add'
 alias grr='git remote rm'

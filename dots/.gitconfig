@@ -1,6 +1,6 @@
 [user]
-  name = nate_h
-  email = nhapeman@gmail.com
+	name = nates linux desktop
+	email = nhapeman@ai.co
 [core]
   excludesfile = ~/.git-global-ignore
   editor = vim
@@ -39,8 +39,6 @@
   h = rev-parse HEAD
   pr = pull-request -b master
   prd = pull-request -b develop
-[branch]
-  autosetuprebase = always
 [gc]
   auto = 0
 [push]
