@@ -23,6 +23,9 @@
       "docs/*"
       "node_modules/*"
       "third_party/*"
+      "gui/*"
+      "minifrac/*"
+      "core/*"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"
