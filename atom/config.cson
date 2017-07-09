@@ -12,6 +12,9 @@
       "mighty-react-snippets"
       "intentions"
       "git-blame"
+      "angularjs-snippets"
+      "atom-jshint"
+      "es6-javascript"
     ]
     ignoredNames: [
       ".git"
@@ -25,7 +28,9 @@
       "third_party/*"
       "gui/*"
       "minifrac/*"
-      "core/*"
+      "htmltemplates.js"
+      "ourcode*"
+      "third_part*"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"
@@ -33,7 +38,6 @@
     telemetryConsent: "no"
   editor:
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
-    fontSize: 15
     invisibles:
       cr: " "
       eol: " "
@@ -60,7 +64,8 @@
       "source.js-semantic"
       "jsx"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 70
   "markdown-preview":
     useGitHubStyle: true
   minimap:
