@@ -26,6 +26,7 @@
       "gui/*"
       "minifrac/*"
       "core/*"
+      "ourcode*"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"
@@ -60,7 +61,8 @@
       "source.js-semantic"
       "jsx"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 128
   "markdown-preview":
     useGitHubStyle: true
   minimap:
