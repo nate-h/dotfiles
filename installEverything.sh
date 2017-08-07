@@ -22,13 +22,46 @@ done
 # create dot links
 source ~/dotfiles/bin/create_dot_links.sh
 
-return 1
-
 # reset atom
 rm -rf ~/.atom
 rm -rf ~/dotfiles/atom/packages
 source ~/dotfiles/atom/create_atom_link.sh
 source ~/dotfiles/atom/setupAtom.sh
+
+
+#wnload chrome
+
+#generate ssh key
+
+#install git
+
+#create dev folder
+
+#install atom
+#install curl
+
+#sudo apt-get install git-gui
+
+#sudo apt-get update
+#sudo apt-get install vim
+
+
+#sudo apt-get update
+#sudo apt-get install terminator
+
+#install zsh
+#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+#sudo apt-get install python-setuptools
+
+#sudo easy_install pip
+
+#sudo pip install virtualenvwrapper
+
+# Folow this:
+# https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a
 
 # install terminator
 # install zsh

@@ -23,3 +23,5 @@ ZSH_THEME="agnoster"
 plugins=(virtualenv virtualenvwrapper zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 source /home/nate/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval `dircolors ~/.dir_colors/dircolors`
