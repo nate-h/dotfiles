@@ -28,7 +28,6 @@
       "third_party/*"
       "gui/*"
       "minifrac/*"
-      "core/*"
       "ourcode*"
       "htmltemplates.js"
       "third_part*"
