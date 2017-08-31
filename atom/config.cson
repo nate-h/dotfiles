@@ -12,9 +12,11 @@
       "mighty-react-snippets"
       "intentions"
       "git-blame"
-      "angularjs-snippets"
       "atom-jshint"
       "es6-javascript"
+      "atom-jinja2"
+      "language-matlab"
+      "angularjs-snippets"
     ]
     ignoredNames: [
       ".git"
@@ -32,6 +34,8 @@
       "ourcode*"
       "htmltemplates.js"
       "third_part*"
+      "AWS/*"
+      "updir"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"
@@ -57,8 +61,7 @@
     ignoreCase: true
   jshint:
     supportLintingJsx: true
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-jshint":
     scopes: [
       "source.js"
@@ -67,6 +70,7 @@
     ]
   "linter-ui-default":
     panelHeight: 70
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
