@@ -4,8 +4,6 @@
     disabledPackages: [
       "react"
       "minimap"
-      "spell-check"
-      "linter-spell"
       "redux-snippets"
       "react-snippets"
       "mighty-react-snippets"
@@ -45,6 +43,7 @@
       cr: " "
       eol: " "
       tab: "⇨"
+    softTabs: false
     softWrap: true
     tabLength: 4
     tabType: "soft"
@@ -94,8 +93,11 @@
       "text.plain.null-grammar"
       "source.css"
       "text.html.basic"
+      "source.rst"
+      "text.restructuredtext"
     ]
-  "tree-view": {}
+  "tree-view":
+    autoReveal: true
   welcome:
     showOnStartup: false
 ".angular.html.text":
