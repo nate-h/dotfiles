@@ -34,6 +34,10 @@ alias vdir='ls --color=auto --format=long'
 
 alias upd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
 
+# Local server command
+#npm install -g browser-sync
+alias serve="browser-sync start -s -f . --no-notify --host localhost --port 9000"
+
 ################################################################################
 #######################   Basic Navigation Commands   ##########################
 ################################################################################
