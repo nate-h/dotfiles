@@ -6,7 +6,7 @@
 ############################################################
 
 alias lice="cd ~/dev/LiceViewer"
-alias fish="cd ~/dev/Annotator && . fish/bin/activate"
+alias fish="cd ~/dev/Annotator"
 alias fishw="cd ~/dev/Annotator/webapps"
 alias fisha="cd ~/dev/Annotator/webapps/annotator"
 
