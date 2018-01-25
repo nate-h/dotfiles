@@ -41,7 +41,7 @@ fi
 
 # added by Miniconda3 4.3.11 installer
 #export PATH="/home/nate/miniconda3/bin:$PATH"
-#export PATH=~/.local/bin:$PATH
+export PATH=~/.local/bin:$PATH
 #export LOCAL_IP=`ipconfig getifaddr en0`
 
 ################################################################################
