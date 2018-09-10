@@ -1,10 +1,8 @@
-for f in ~/dotfiles/jobs/*
+declare -a arr=(~/dotfiles/jobs/appliedinvention)
+
+
+for job in "${arr[@]}"
 do
-  if [ -r "$f" ] && [ -f "$f" ]; then
-      echo -n "Loading commands for job $(basename $f)..."
-      source $f
-      echo "Done!"
-  else
-    echo "Unable to load commands for job: $(basename $f)"
-  fi
+  echo "Loading commands for: $(basename $job)"
+  source $job
 done

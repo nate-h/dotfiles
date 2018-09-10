@@ -17,5 +17,3 @@ alias ami="cd ~/dev/undersea/amitek"
 alias mongr="source ~/dev/undersea/amitek/data/db.sh run"
 alias mongi="source ~/dev/undersea/amitek/data/db.sh import"
 alias monge="source ~/dev/undersea/amitek/data/db.sh export"
-
-
