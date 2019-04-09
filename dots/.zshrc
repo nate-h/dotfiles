@@ -20,7 +20,8 @@ source ~/.bashrc
 
 # Configure zsh
 ZSH_THEME="agnoster"
-plugins=(virtualenv virtualenvwrapper zsh-syntax-highlighting)
+plugins=(virtualenv virtualenvwrapper)
+# zsh-syntax-highlighting
 source $ZSH/oh-my-zsh.sh
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
