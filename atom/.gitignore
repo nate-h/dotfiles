@@ -1,9 +1,0 @@
-blob-store
-compile-cache
-dev
-storage
-.node-gyp
-.npm
-nohup.out
-.apm
-packages
