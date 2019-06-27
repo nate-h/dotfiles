@@ -14,7 +14,7 @@ alias p7="pachctl_1.7.10"
 alias fishw="cd ~/dev/Annotator/webapps"
 alias fisha="cd ~/dev/Annotator/webapps/annotator"
 alias fishm="cd ~/dev/Annotator/python/services/mediaservice/mediaservice/"
-alias n3="cd ~/dev/nhapeman.com_v3"
+alias n3="cd ~/dev/nhapeman_v3"
 
 alias under="cd ~/dev/undersea"
 alias ami="cd ~/dev/undersea/amitek"
