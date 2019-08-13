@@ -16,10 +16,3 @@ alias fishw="cd ~/dev/Annotator/webapps"
 alias fisha="cd ~/dev/Annotator/webapps/annotator"
 alias fishm="cd ~/dev/Annotator/python/services/mediaservice/mediaservice/"
 alias n3="cd ~/dev/nhapeman_v3"
-
-alias under="cd ~/dev/undersea"
-alias ami="cd ~/dev/undersea/amitek"
-
-alias mongr="source ~/dev/undersea/amitek/data/db.sh run"
-alias mongi="source ~/dev/undersea/amitek/data/db.sh import"
-alias monge="source ~/dev/undersea/amitek/data/db.sh export"
