@@ -32,6 +32,7 @@ source ~/dotfiles/bin/create_dot_links.sh
 
 # create dev folder
 
+# sudo apt-get install xclip # Output command to clipboard
 # sudo apt install curl
 # sudo apt-get install git-gui
 
