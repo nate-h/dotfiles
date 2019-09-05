@@ -57,8 +57,8 @@ alias -- -="cd -"
 ################################################################################
 
 # Copy to clipboard
-alias clip="xclip -selection clipboard | xclip -selection clipboard -o"
-alias clipo="xclip -selection clipboard"
+alias clipo="xclip -selection clipboard | xclip -selection clipboard -o"
+alias clip="xclip -selection clipboard"
 
 # gunzip
 alias ungz="gunzip -k"
