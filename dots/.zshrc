@@ -27,6 +27,10 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval `dircolors ~/.dir_colors/dircolors`
 
+# At the very least, this enables bash complete for function guessing.
+autoload bashcompinit
+bashcompinit
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
