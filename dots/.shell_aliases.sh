@@ -5,7 +5,7 @@
 
 # open with no output
 function open(){
-	gnome-open "$@" >/dev/null 2>&1
+	xdg-open "$@" >/dev/null 2>&1
 }
 
 # Enable aliases to be sudo’ed
