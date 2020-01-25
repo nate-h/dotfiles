@@ -202,3 +202,6 @@ alias undopush="git push -f origin HEAD^:master"
 
 # `cd` to Git repo root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+
+# Attempt to connect to bluetooth headphones
+alias sony='sudo systemctl restart bluetooth && sleep 5 && echo -e "connect 04:5D:4B:83:4B:D4 \nquit" | bluetoothctl'
