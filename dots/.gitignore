@@ -1,6 +1,2 @@
 *.cache
 node_modules
-atom/.apm
-atom/packages
-atom/storage
-atom/blob-store

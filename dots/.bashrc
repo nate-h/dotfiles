@@ -10,20 +10,11 @@ case $- in
 esac
 
 ################################################################################
-##############################   Load Settings   ###############################
-################################################################################
-
-# load settings definitions.
-if [ -f ~/dotfiles/settings.sh ]; then
-    . ~/dotfiles/settings.sh
-fi
-
-################################################################################
 ###############################   Pimp Console   ###############################
 ################################################################################
 
 
-# this should be the default behavior but its not
+# When tab-completing things, be case-insensitive.
 set completion-ignore-case on
 
 # map capslock to backspace
@@ -39,17 +30,8 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
 ###############################   Exports   ####################################
 ################################################################################
 
-# added by Anaconda2 4.0.0 installer
-#export PATH="/home/nate/anaconda3/bin:$PATH"
-
-# added by Miniconda3 4.3.11 installer
-#export PATH="/home/nate/miniconda3/bin:$PATH"
 export PATH=~/.local/bin:$PATH
-#export LOCAL_IP=`ipconfig getifaddr en0`
-
 export PATH=~/.npm-global/bin:$PATH
-
-
 
 ################################################################################
 #########################   Load External Sources   ############################
@@ -57,11 +39,10 @@ export PATH=~/.npm-global/bin:$PATH
 
 
 # Load the shell dotfiles
-for file in $HOME/.{shell_exports.sh,shell_aliases.sh,shell_functions.sh,shell_config.sh}; do
+for file in $HOME/.{git_aliases.sh,shell_exports.sh,shell_aliases.sh,shell_functions.sh,shell_config.sh}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-
 
 
 source ~/dotfiles/bin/loadJobs.sh
