@@ -32,7 +32,8 @@ alias path='echo -e ${PATH//:/\\n}'
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
 
-alias upd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
+alias upd='sudo apt-get update && sudo apt-get upgrade'
+alias jot='vim /tmp/deleteme.md && rm /tmp/deleteme.md'
 
 # Local server command
 #npm install -g browser-sync
@@ -55,6 +56,9 @@ alias -- -="cd -"
 ################################################################################
 ##################################   Misc   ####################################
 ################################################################################
+
+# Remove pycache
+alias nopyc="find . | grep -E \"(__pycache__|\.pyc|\.pyo$)\" | xargs rm -rf"
 
 # Copy to clipboard
 alias clipo="xclip -selection clipboard | xclip -selection clipboard -o"
@@ -163,6 +167,7 @@ alias gui="git gui"
 alias gs="git status"
 alias gco="git checkout"
 alias gb="git branch"
+alias gcm="git commit -m"
 
 
 

@@ -31,9 +31,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	setxkbmap -option caps:backspace
 fi
 
-gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 20
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 13
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
 
 ################################################################################
 ###############################   Exports   ####################################
@@ -47,7 +47,9 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
 export PATH=~/.local/bin:$PATH
 #export LOCAL_IP=`ipconfig getifaddr en0`
 
- export PATH=~/.npm-global/bin:$PATH
+export PATH=~/.npm-global/bin:$PATH
+
+
 
 ################################################################################
 #########################   Load External Sources   ############################

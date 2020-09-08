@@ -1,6 +1,7 @@
 set number          " show line numbers
 set ts=4            " change tab size/length
 syntax on           " turns syntax on for certain languages
+set clipboard=unnamedplus
 
 set smartcase       " use case sensitive search except when using capital letter                                     s
 set ignorecase
