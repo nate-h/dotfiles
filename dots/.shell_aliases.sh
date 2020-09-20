@@ -34,7 +34,7 @@ alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
 
 alias upd='sudo apt-get update && sudo apt-get upgrade'
-alias jot='vim /tmp/deleteme.md && rm /tmp/deleteme.md'
+alias jot='micro /tmp/deleteme.md && rm /tmp/deleteme.md'
 
 # Local server command
 #npm install -g browser-sync
