@@ -46,7 +46,7 @@ unset file;
 
 
 source ~/dotfiles/bin/loadJobs.sh
-source ~/mypad/aliases
+source ~/dev/jot/jotrc
 
 # Force console to start in home dir. Windows msys terminal doesn't
 cd ~
