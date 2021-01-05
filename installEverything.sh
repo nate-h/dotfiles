@@ -86,3 +86,5 @@ source ~/dotfiles/bin/create_dot_links.sh
 # Install vs code through app store
 # Run in working vs code and copy over list:
 # code --list-extensions | xargs -L 1 echo code --install-extension
+
+

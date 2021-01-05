@@ -1,4 +1,4 @@
-declare -a arr=(~/dotfiles/jobs/appliedinvention)
+declare -a arr=(~/dotfiles/jobs/appliedinvention.sh ~/dotfiles/jobs/personal.sh)
 
 
 for job in "${arr[@]}"
