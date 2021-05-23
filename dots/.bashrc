@@ -24,7 +24,7 @@ fi
 
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 13
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
 
 ################################################################################
 ###############################   Exports   ####################################
@@ -46,7 +46,15 @@ unset file;
 
 
 source ~/dotfiles/bin/loadJobs.sh
-source ~/dev/jot/jotrc
+
+# Setup jots
+if [ -f ~/dev/jot/jotrc ]  && command -v micro &> /dev/null; then
+  source ~/dev/jot/jotrc
+else
+  echo "Both jot and micro need to be installed."
+  echo "Install micro: 'sudo apt install micro'"
+  echo "Install jot: 'cd ~/dev && git clone git@github.com:nate-h/jot.git && cd jot && ./run_this_once.sh'"
+fi
 
 # Force console to start in home dir. Windows msys terminal doesn't
 cd ~
