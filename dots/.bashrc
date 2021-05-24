@@ -39,7 +39,7 @@ export PATH=~/.npm-global/bin:$PATH
 
 
 # Load the shell dotfiles
-for file in $HOME/.{git_aliases.sh,shell_exports.sh,shell_aliases.sh,shell_functions.sh,shell_config.sh}; do
+for file in $HOME/.{git_aliases.sh,shell_aliases.sh,shell_functions.sh}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
