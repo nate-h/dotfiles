@@ -43,7 +43,7 @@ alias gcln="git clean -xfd" # remove untracked files
 ###########
 
 # List git branches on the local machine sorted by recent updates, adding a star to remote tracking branches
-function gbl() {
+function gls() {
   RED="\e[91m";
   for branch in $(git branch | sed s/^..//); do
     time_ago=$(git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $branch --);
