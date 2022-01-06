@@ -62,5 +62,5 @@ function ab() {
 
 # List current work on your branch. (commits from head to master.)
 function gcw() {
-  git log --pretty=format"- %s" master..HEAD
+  git log --pretty=format:"- %s" master..HEAD
 }
