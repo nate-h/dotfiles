@@ -9,33 +9,33 @@ alias gui="git gui" # View current changes in a gui
 alias gk="gitk --all" # View all git commits in a gui
 alias gf="git fetch --prune"
 alias gs="git status -s"  # short status
-alias gl='git log'
-alias gd='git diff'
+alias gl="git log"
+alias gd="git diff"
 alias gss="git show --stat"
 alias gph="git push origin HEAD"
 alias gco="git checkout"
 alias gcm="git commit -m"
-alias gap='git add -p' # step through each change, or hunk
+alias gap="git add -p" # step through each change, or hunk
 alias undopush="git push -f origin HEAD^:master"  # Undo a `git push`
 alias gupdate="git submodule update --init --recursive"
 
 # Aliases I need to get down.
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'  # `cd` to Git repo root
 alias gws='git diff --shortstat "@{0 day ago}"' # how many lines of code you have written today
-alias gsl='git shortlog -sn' # quickly get a list of contributors and see how many commits each person has
-alias gwcl='git ls-files | xargs wc -l' # count number of lines of code in a git project
-alias gam='git commit -am'  # Git commit all w/ message
+alias gsl="git shortlog -sn" # quickly get a list of contributors and see how many commits each person has
+alias gwcl="git ls-files | xargs wc -l" # count number of lines of code in a git project
+alias gam="git commit -am"  # Git commit all w/ message
 
 # Aliases for another day.
 alias rebase="git rebase origin master"
 alias gpt="git push origin HEAD && git push --tags"
-alias glp5='git log -5 --pretty --oneline' # view your last 5 latest commits each on their own line
-alias glt='git log --all --graph --decorate --oneline --simplify-by-decoration' # pretty branch status
-alias glsw='git log -S' # search the commit history for the word puppy and display matching commits (glsw [word])
-alias gta='git tag -a -m'
-alias grl='git reflog' # allows you to see every step you have made with git allowing you to retract and reinstate your steps
-alias gchp='git cherry-pick' # cherry pick the committed code in your own branch (gchp [hash])
-alias gcln='git clean -xfd' # remove untracked files
+alias glp5="git log -5 --pretty --oneline" # view your last 5 latest commits each on their own line
+alias glt="git log --all --graph --decorate --oneline --simplify-by-decoration" # pretty branch status
+alias glsw="git log -S" # search the commit history for the word puppy and display matching commits (glsw [word])
+alias gta="git tag -a -m"
+alias grl="git reflog" # allows you to see every step you have made with git allowing you to retract and reinstate your steps
+alias gchp="git cherry-pick" # cherry pick the committed code in your own branch (gchp [hash])
+alias gcln="git clean -xfd" # remove untracked files
 
 
 ###########
