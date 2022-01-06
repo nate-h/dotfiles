@@ -1,26 +1,10 @@
-################################################################################
-############################   Git Shortscuts   ################################
-################################################################################
-
-# List git branches on the local machine sorted by recent updates, adding a star to remote tracking branches
-function gb() {
-  RED="\e[91m";
-  for branch in $(git branch | sed s/^..//); do
-    time_ago=$(git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $branch --);
-    # Add a red star to mark branches that are tracking something upstream
-    tracks_upstream=$(if [ "$(git rev-parse $branch@{upstream} 2>/dev/null)" ]; then printf "$RED★"; fi);
-    printf "%-53s - %s %s\n" $time_ago $branch $tracks_upstream;
-  done | sort;
-}
-
-# List remote branches that aren't head or master.
-function ab() {
-  format='%(committerdate:short) %09 %(authorname) %09 $%(refname)'
-  git for-each-ref --sort=authorname committerdate --format=$format refs/remotes \
-  | awk '!/HEAD/ && !/master/'
-}
+#########
+# Aliases
+#########
 
 # Aliases I have down.
+alias g="git"
+alias gb="git branch"
 alias gui="git gui" # View current changes in a gui
 alias gk="gitk --all" # View all git commits in a gui
 alias gf="git fetch --prune"
@@ -52,3 +36,31 @@ alias gta='git tag -a -m'
 alias grl='git reflog' # allows you to see every step you have made with git allowing you to retract and reinstate your steps
 alias gchp='git cherry-pick' # cherry pick the committed code in your own branch (gchp [hash])
 alias gcln='git clean -xfd' # remove untracked files
+
+
+###########
+# Functions
+###########
+
+# List git branches on the local machine sorted by recent updates, adding a star to remote tracking branches
+function gbl() {
+  RED="\e[91m";
+  for branch in $(git branch | sed s/^..//); do
+    time_ago=$(git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $branch --);
+    # Add a red star to mark branches that are tracking something upstream
+    tracks_upstream=$(if [ "$(git rev-parse $branch@{upstream} 2>/dev/null)" ]; then printf "$RED★"; fi);
+    printf "%-53s - %s %s\n" $time_ago $branch $tracks_upstream;
+  done | sort;
+}
+
+# List remote branches that aren't head or master.
+function ab() {
+  format='%(committerdate:short) %09 %(authorname) %09 %(refname)'
+  git for-each-ref --sort=authorname committerdate --format=$format refs/remotes \
+  | awk '!/HEAD/ && !/master/'
+}
+
+# List current work on your branch. (commits from head to master.)
+function gcw() {
+  git log --pretty=format"- %s" master..HEAD
+}
