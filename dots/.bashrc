@@ -22,6 +22,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	setxkbmap -option caps:backspace
 fi
 
+# TODO: should probably be placed in ubuntu specific file / block.
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 13
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
@@ -45,8 +46,6 @@ done;
 unset file;
 
 
-source ~/dotfiles/bin/loadJobs.sh
-
 # Setup jots
 if [ -f ~/dev/jot/jotrc ]  && command -v micro &> /dev/null; then
   source ~/dev/jot/jotrc
@@ -56,5 +55,5 @@ else
   echo "Install jot: 'cd ~/dev && git clone git@github.com:nate-h/jot.git && cd jot && ./run_this_once.sh'"
 fi
 
-# Force console to start in home dir. Windows msys terminal doesn't
-cd ~
+# Sanity check.
+echo "dotfiles loaded."
