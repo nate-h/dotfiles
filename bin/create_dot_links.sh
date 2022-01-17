@@ -1,16 +1,7 @@
 #!/bin/bash
+# Create Symbolic Links for all dot files in the dots folder.
 
-################################################################################
-########################   Create Dot Symbolic Links   #########################
-################################################################################
-# dotfiles works by creating symbolic links for each of the dotfiles.
-# my reasoning for symbolic links was that I don't want to create a repository
-# in my home directory to manage all of my dotfiles. A symbolic link solves this
-# problem and lets me manage my dotfiles in a seperate directory.
-################################################################################
-
-
-# We still need this.
+# Simple check if using windows.
 windows() { [[ -n "$WINDIR" ]]; }
 
 # Cross-platform symlink function. With one parameter, it will check
@@ -20,9 +11,9 @@ link() {
     if [[ -z "$2" ]]; then
         # Link-checking mode.
         if windows; then
-            fsutil reparsepoint query "$1" > /dev/null
+            fsutil reparsepoint query "$1" >/dev/null
         else
-            [[ -h "$1" ]]
+            [[ -L "$1" ]]
         fi
     else
         # Link-creation mode.
@@ -30,9 +21,9 @@ link() {
             # Windows needs to be told if it's a directory or not. Infer that.
             # Also: note that we convert `/` to `\`. In this case it's necessary.
             if [[ -d "$2" ]]; then
-                cmd <<< "mklink /D \"$1\" \"${2//\//\\}\"" > /dev/null
+                cmd <<<"mklink /D \"$1\" \"${2//\//\\}\"" >/dev/null
             else
-                cmd <<< "mklink ${1//\//\\} ${2//\//\\}"  > /dev/null
+                cmd <<<"mklink ${1//\//\\} ${2//\//\\}" >/dev/null
             fi
         else
             ln -s "$2" "$1"
@@ -41,18 +32,21 @@ link() {
 }
 
 # Create symbolic links
-dotfiles=(`find ~/dotfiles/dots -name '.*'`)
+dotfiles=($(find ~/dotfiles/dots -name '.*'))
 for i in "${dotfiles[@]}"; do
-  if [ -f ~/$i ]; then
-      echo "Error: Unable to create symbolic link for $i. File already exist."
+    if [ -f ~/$i ]; then
+        echo "Error: Unable to create symbolic link for $i. File already exist."
     else
-      if windows; then
-          link %HOMEPATH%/$i %HOMEPATH%/dotfiles/$i
-      else
-          link ~/$(basename $i) $i
-          #echo ~/$(basename $i)
-          #echo $i
-      fi
-      echo "Created symbolic for $i"
-  fi
+        if windows; then
+            link %HOMEPATH%/$i %HOMEPATH%/dotfiles/$i
+        else
+            if [[ -f ~/$(basename $i) ]]
+            then
+                echo "Cannot create symlink for $(basename $i). Already exists."
+            else
+                link ~/$(basename $i) $i
+                echo "Created symbolic for $i"
+            fi
+        fi
+    fi
 done

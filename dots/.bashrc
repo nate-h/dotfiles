@@ -25,7 +25,7 @@ fi
 # TODO: should probably be placed in ubuntu specific file / block.
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 13
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
+#gsettings set org.gnome.desktop.interface text-scaling-factor 1
 
 ################################################################################
 ###############################   Exports   ####################################
