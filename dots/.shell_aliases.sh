@@ -116,13 +116,15 @@ alias la='ls -a | grep "^\."'
 
 
 # List all files colorized in long format
-alias l="ls -lF ${colorflag}"
+#alias l="ls -lF ${colorflag}"
+alias l="ls -lF"
 
 # ls options: A = include hidden (but not . or ..), F = put `/` after folders, h = byte unit suffixes
-alias ls='ls -AFh ${colorflag} --group-directories-first'
+#alias ls='ls -AFh ${colorflag} --group-directories-first'
 
 # List all files colorized in long format, including dot files
-alias la="ls -la ${colorflag}"
+#alias la="ls -la ${colorflag}"
+alias la="ls -la"
 
 # List only directories
 alias lsd='gls -l | grep "^d"'

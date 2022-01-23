@@ -54,6 +54,3 @@ else
   echo "Install micro: 'sudo apt install micro'"
   echo "Install jot: 'cd ~/dev && git clone git@github.com:nate-h/jot.git && cd jot && ./run_this_once.sh'"
 fi
-
-# Sanity check.
-echo "dotfiles loaded."
