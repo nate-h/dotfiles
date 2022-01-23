@@ -1,9 +1,34 @@
-# dotfiles
-home dir config files like .bashrc, .vimrc, etc.
+# Nate's dotfiles
 
+This repo contains tools that help automate the process of getting new machines
+to my liking and certain files like my dotfiles that get installed as part
+of that automation process. This repo uses symlinks from the dots folder to
+the home directory that way we can track dot file changes and sync up with
+changes from upstream.
 
+Note: I primarily develop on Ubuntu and MacOS so ymmv
 
-I've created this repository to share the same bashrc, vimrc, etc for all my machines.
-To use, remove current .bashrc, .vimrc, etc  and create symlink to these repositories files (ln -s pathToFile pathToSymlink).
-I will hopefully automate that ability.
+## Installation guide
+
+This should be something to lightly reference.
+If installing on a new machine, reevaluate things below.
+
+```sh
+    # Setup ssh key and add to github.
+
+    # Setup dotfiles.
+    cd ~ && git clone git@github.com:nate-h/dotfiles.git
+    ~/dotfiles/bin/create_dot_links.sh
+
+    # Get repos downloaded.
+    mkdir ~/dev
+    ~/dotfiles/bin/clone_repos.sh
+    cd ~/dev/jot && ./run_this_once.sh
+
+    # Get terminal up.
+    sudo apt-get install terminator
+    sudo apt-get install curl
+    ## Setup Powerlevel10k
+    ## Set solarized as theme in terminator
+```
 
