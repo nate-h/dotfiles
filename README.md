@@ -25,10 +25,9 @@ If installing on a new machine, reevaluate things below.
     ~/dotfiles/bin/clone_repos.sh
     cd ~/dev/jot && ./run_this_once.sh
 
-    # Get terminal up.
-    sudo apt-get install terminator
-    sudo apt-get install curl
-    ## Setup Powerlevel10k
-    ## Set solarized as theme in terminator
+    # On mac: get terminal up
+    # Get solarized + zsh + git colors setup
+    # https://gist.github.com/kevin-smets/8568070
+    
 ```
 
