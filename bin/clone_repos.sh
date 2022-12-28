@@ -1,6 +1,9 @@
 # Inspired by many answers here:
 # https://stackoverflow.com/questions/19576742/how-to-clone-all-repos-at-once-from-github
 
+mkdir -p ~/dev
+cd ~/dev
+
 # Grab github username
 read -p "Enter your github username [nate-h]: " GHUSER
 GHUSER=${name:-nate-h}

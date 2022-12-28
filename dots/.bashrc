@@ -23,9 +23,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 fi
 
 # TODO: should probably be placed in ubuntu specific file / block.
-gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 13
-gsettings set org.gnome.desktop.peripherals.keyboard delay 250
-#gsettings set org.gnome.desktop.interface text-scaling-factor 1
+# gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 13
+# gsettings set org.gnome.desktop.peripherals.keyboard delay 250
+# gsettings set org.gnome.desktop.interface text-scaling-factor 1
 
 ################################################################################
 ###############################   Exports   ####################################
@@ -44,7 +44,6 @@ for file in $HOME/.{git_aliases.sh,shell_aliases.sh,shell_functions.sh}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-
 
 # Setup jots
 if [ -f ~/dev/jot/jotrc ]  && command -v micro &> /dev/null; then
